@@ -1,0 +1,211 @@
+:root {
+  --white: #fff;
+  --blue: rgb(146, 202, 206);
+  --tan: #d8a47f;
+  /* You can use it with any value that is repeated throughout the sheet */
+  --border-radius: 50px;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  line-height: 1.3;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+}
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1%;
+  background-color: rgb(49, 52, 61);
+}
+
+header h1 {
+  font-size: 200%;
+  background-color: var(--blue);
+  color: rgb(49, 52, 61);
+  padding-left: 50px;
+}
+
+header nav ul {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  min-width: 400px;
+  margin: 10px;
+}
+
+header nav a {
+  color: var(--blue);
+  text-decoration: underline;
+  margin: 10px;
+  padding: 10px;
+}
+
+h2 {
+  font-size: 30px;
+}
+
+.hero {
+  height: 220px;
+  width: 100%;
+  margin-bottom: 25px;
+  background-image: url("../images/pencil.webp");
+  background-size: cover;
+  background-position: center;
+  display: flex;
+}
+
+.heropicture {
+  display: flex;
+  width: 100%;
+  justify-content: flex-end;
+  margin-right: 10%;
+  padding: 10px;
+}
+
+.toph2 {
+  width: 15%;
+  text-align: right;
+  border-right: solid;
+  padding-right: 10px;
+  justify-content: end;
+}
+.topp {
+  padding-left: 20px;
+  width: 80%;
+  flex-direction: row;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+}
+.topdiv {
+  display: flex;
+  padding-bottom: 20px;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.workh2 {
+  width: 30%;
+  text-align: right;
+  border-right: solid;
+  padding-right: 10px;
+}
+
+.botp {
+  width: 80%;
+  flex-direction: row;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  padding-left: 20px;
+}
+
+.aproject1 {
+  flex: 1 1 50%;
+  position: relative;
+}
+
+.bluebut:hover {font-weight: bolder;}
+
+.aproject2 {
+  flex: 1 1 50%;
+  position: relative;
+}
+.aproject3 {
+  flex: 1 1 50%;
+  position: relative;
+}
+
+.aproject1 .bluebut {
+  position: absolute;
+  bottom: 30px;
+  background-color: var(--blue);
+  padding: 10px;
+}
+.aproject2 .bluebut {
+  position: absolute;
+  bottom: 30px;
+  background-color: var(--blue);
+  padding: 10px;
+}
+.aproject3 .bluebut {
+  position: absolute;
+  bottom: 30px;
+  background-color: var(--blue);
+  padding: 10px;
+}
+
+.bluebut div a {
+  text-decoration: none;
+}
+.aproject1 img {
+  width: 1500px;
+  max-height: 300px;
+  object-fit: cover;
+}
+
+.aproject2 img {
+  width: 742px;
+  max-height: 150px;
+  margin-right: 10px;
+  margin-top: 10px;
+  object-fit: cover;
+}
+
+.aproject3 img {
+  width: 742px;
+  max-height: 150px;
+  margin-top: 10px;
+  object-fit: cover;
+}
+
+.picborder {
+  border: 5px;
+  border-style: solid;
+  border-color: var(--blue);
+}
+
+.bottomdiv {
+  display: flex;
+  padding-bottom: 20px;
+  flex-direction: row;
+}
+.botnav {
+  display: relative;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: center;
+  width: 83%;
+  padding-left: 30px;
+}
+
+.botnav nav ul {
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: center;
+  display: flex;
+  width: 100%;
+  position: relative;
+}
+
+.botnav ul li {flex-direction: column;
+  justify-content: space-between;
+  display: relative;
+  margin-right: 15%;
+}
+
+@media screen and (max-width: 768px) {
+  h2 {
+    font-size: 120%;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .body {
+    flex-direction: column;
+    flex-wrap: wrap;
+  }
+}
